@@ -1,0 +1,41 @@
+Jun 10 18:50:00.893 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jun 10 18:50:00.893 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59055.
+Jun 10 18:50:00.904 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 10 18:50:00.904 HYPERVISOR: exec_cmd: hypervisor working_dir /home/dariod9/Desktop/Projeto/project-files/dynamips 
+Jun 10 18:50:00.904 GENERAL: working_dir=/home/dariod9/Desktop/Projeto/project-files/dynamips
+Jun 10 18:50:00.904 HYPERVISOR: exec_cmd: hypervisor working_dir /home/dariod9/Desktop/Projeto/project-files/dynamips/412b0e6d-36f6-4c8f-8436-9a4520b0af98 
+Jun 10 18:50:00.904 GENERAL: working_dir=/home/dariod9/Desktop/Projeto/project-files/dynamips/412b0e6d-36f6-4c8f-8436-9a4520b0af98
+Jun 10 18:50:00.904 HYPERVISOR: exec_cmd: vm create RLMicrO 3 c7200 
+Jun 10 18:50:00.904 VM: VM RLMicrO created.
+Jun 10 18:50:00.905 HYPERVISOR: exec_cmd: vm set_con_tcp_port RLMicrO 5005 
+Jun 10 18:50:00.905 HYPERVISOR: exec_cmd: c7200 get_mac_addr RLMicrO 
+Jun 10 18:50:00.905 HYPERVISOR: exec_cmd: vm get_status RLMicrO 
+Jun 10 18:50:00.905 HYPERVISOR: exec_cmd: vm slot_add_binding RLMicrO 0 0 C7200-IO-FE 
+Jun 10 18:50:00.905 HYPERVISOR: exec_cmd: vm set_disk0 RLMicrO 0 
+Jun 10 18:50:00.906 HYPERVISOR: exec_cmd: vm get_status RLMicrO 
+Jun 10 18:50:00.906 HYPERVISOR: exec_cmd: vm set_idle_pc RLMicrO 0x60608040 
+Jun 10 18:50:00.906 HYPERVISOR: exec_cmd: vm set_ios RLMicrO /home/dariod9/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 10 18:50:00.906 HYPERVISOR: exec_cmd: c7200 set_mac_addr RLMicrO ca03.15b6.0000 
+Jun 10 18:50:00.907 HYPERVISOR: exec_cmd: vm set_nvram RLMicrO 512 
+Jun 10 18:50:00.907 HYPERVISOR: exec_cmd: vm set_ram RLMicrO 512 
+Jun 10 18:50:00.907 HYPERVISOR: exec_cmd: vm get_status RLMicrO 
+Jun 10 18:50:00.907 HYPERVISOR: exec_cmd: vm slot_remove_binding RLMicrO 0 0 
+Jun 10 18:50:00.907 HYPERVISOR: exec_cmd: vm get_status RLMicrO 
+Jun 10 18:50:00.908 HYPERVISOR: exec_cmd: vm slot_add_binding RLMicrO 0 0 C7200-IO-2FE 
+Jun 10 18:50:00.908 HYPERVISOR: exec_cmd: vm get_status RLMicrO 
+Jun 10 18:50:00.908 HYPERVISOR: exec_cmd: vm slot_add_binding RLMicrO 1 0 PA-2FE-TX 
+Jun 10 18:50:02.339 HYPERVISOR: exec_cmd: nio create_udp udp-6b959d69-6839-4630-be93-ce272cd3f4aa 10012 127.0.0.1 10013 
+Jun 10 18:50:02.552 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RLMicrO 0 0 udp-6b959d69-6839-4630-be93-ce272cd3f4aa 
+Jun 10 18:50:02.552 HYPERVISOR: exec_cmd: vm get_status RLMicrO 
+Jun 10 18:50:07.284 HYPERVISOR: exec_cmd: nio create_udp udp-8a8de943-20b1-4e86-b032-023f744ea989 10154 127.0.0.1 10155 
+Jun 10 18:50:07.285 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RLMicrO 0 1 udp-8a8de943-20b1-4e86-b032-023f744ea989 
+Jun 10 18:50:07.285 HYPERVISOR: exec_cmd: vm get_status RLMicrO 
+Jun 10 18:50:13.434 HYPERVISOR: exec_cmd: vm get_status RLMicrO 
+Jun 10 18:50:13.435 HYPERVISOR: exec_cmd: vm extract_config RLMicrO 
+Jun 10 18:50:13.962 HYPERVISOR: exec_cmd: vm get_status RLMicrO 
+Jun 10 18:50:13.962 HYPERVISOR: exec_cmd: vm extract_config RLMicrO 
+Jun 10 18:50:13.965 HYPERVISOR: exec_cmd: vm delete RLMicrO 
+Jun 10 18:50:13.965 VM: VM RLMicrO destroyed.
+Jun 10 18:50:13.965 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 10 18:50:14.415 HYPERVISOR: Stopped.
+Jun 10 18:50:14.415 GENERAL: reset done.

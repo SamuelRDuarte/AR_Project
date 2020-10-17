@@ -1,0 +1,22 @@
+Jun 10 18:50:00.863 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jun 10 18:50:00.863 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50375.
+Jun 10 18:50:00.873 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 10 18:50:00.874 HYPERVISOR: exec_cmd: hypervisor working_dir /home/dariod9/Desktop/Projeto/project-files/dynamips 
+Jun 10 18:50:00.874 GENERAL: working_dir=/home/dariod9/Desktop/Projeto/project-files/dynamips
+Jun 10 18:50:00.874 HYPERVISOR: exec_cmd: ethsw create SWL1 
+Jun 10 18:50:01.642 HYPERVISOR: exec_cmd: nio create_udp udp-f73a8275-094a-42e8-bd24-62e0fe7085ac 10001 127.0.0.1 10000 
+Jun 10 18:50:01.642 HYPERVISOR: exec_cmd: ethsw add_nio SWL1 udp-f73a8275-094a-42e8-bd24-62e0fe7085ac 
+Jun 10 18:50:01.645 HYPERVISOR: exec_cmd: ethsw set_access_port SWL1 udp-f73a8275-094a-42e8-bd24-62e0fe7085ac 21 
+Jun 10 18:50:01.707 HYPERVISOR: exec_cmd: nio create_udp udp-213afd47-a93f-4d4f-aa50-0a5530dada53 10002 127.0.0.1 10003 
+Jun 10 18:50:01.707 HYPERVISOR: exec_cmd: ethsw add_nio SWL1 udp-213afd47-a93f-4d4f-aa50-0a5530dada53 
+Jun 10 18:50:01.726 HYPERVISOR: exec_cmd: ethsw set_access_port SWL1 udp-213afd47-a93f-4d4f-aa50-0a5530dada53 1 
+Jun 10 18:50:02.026 HYPERVISOR: exec_cmd: nio create_udp udp-fddb4e25-5d87-4370-9fa2-4b921c6587fc 10006 127.0.0.1 10007 
+Jun 10 18:50:02.026 HYPERVISOR: exec_cmd: ethsw add_nio SWL1 udp-fddb4e25-5d87-4370-9fa2-4b921c6587fc 
+Jun 10 18:50:02.027 HYPERVISOR: exec_cmd: ethsw set_access_port SWL1 udp-fddb4e25-5d87-4370-9fa2-4b921c6587fc 1 
+Jun 10 18:50:02.326 HYPERVISOR: exec_cmd: nio create_udp udp-c24b032b-0802-4720-a8f4-dce7e610863b 10010 127.0.0.1 10011 
+Jun 10 18:50:02.326 HYPERVISOR: exec_cmd: ethsw add_nio SWL1 udp-c24b032b-0802-4720-a8f4-dce7e610863b 
+Jun 10 18:50:02.329 HYPERVISOR: exec_cmd: ethsw set_access_port SWL1 udp-c24b032b-0802-4720-a8f4-dce7e610863b 1 
+Jun 10 18:50:13.604 HYPERVISOR: exec_cmd: ethsw delete SWL1 
+Jun 10 18:50:13.680 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 10 18:50:13.886 HYPERVISOR: Stopped.
+Jun 10 18:50:13.886 GENERAL: reset done.

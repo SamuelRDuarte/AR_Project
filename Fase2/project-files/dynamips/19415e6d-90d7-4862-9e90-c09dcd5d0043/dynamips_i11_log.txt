@@ -1,0 +1,87 @@
+Jun 11 19:43:00.488 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jun 11 19:43:00.488 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55731.
+Jun 11 19:43:00.499 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 11 19:43:00.499 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ArProject/ar/Projeto/Fase2/Projeto/project-files/dynamips 
+Jun 11 19:43:00.499 GENERAL: working_dir=/home/samuel/Universidade/ArProject/ar/Projeto/Fase2/Projeto/project-files/dynamips
+Jun 11 19:43:00.500 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ArProject/ar/Projeto/Fase2/Projeto/project-files/dynamips/a79aa552-4629-4109-9677-104ede8524f0 
+Jun 11 19:43:00.500 GENERAL: working_dir=/home/samuel/Universidade/ArProject/ar/Projeto/Fase2/Projeto/project-files/dynamips/a79aa552-4629-4109-9677-104ede8524f0
+Jun 11 19:43:00.500 HYPERVISOR: exec_cmd: vm create SWAC2 9 c3725 
+Jun 11 19:43:00.500 VM: VM SWAC2 created.
+Jun 11 19:43:00.501 HYPERVISOR: exec_cmd: vm set_con_tcp_port SWAC2 5014 
+Jun 11 19:43:00.501 HYPERVISOR: exec_cmd: c3725 get_mac_addr SWAC2 
+Jun 11 19:43:00.502 HYPERVISOR: exec_cmd: vm set_disk0 SWAC2 1 
+Jun 11 19:43:00.503 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 19:43:00.503 HYPERVISOR: exec_cmd: vm set_idle_pc SWAC2 0x60a68e70 
+Jun 11 19:43:00.505 HYPERVISOR: exec_cmd: vm set_ios SWAC2 /home/samuel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 11 19:43:00.505 HYPERVISOR: exec_cmd: c3725 set_mac_addr SWAC2 c209.19bf.0000 
+Jun 11 19:43:00.506 HYPERVISOR: exec_cmd: vm set_nvram SWAC2 256 
+Jun 11 19:43:00.507 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 19:43:00.507 HYPERVISOR: exec_cmd: vm slot_add_binding SWAC2 1 0 NM-16ESW 
+Jun 11 19:43:03.944 HYPERVISOR: exec_cmd: nio create_udp udp-423351f5-b852-4b81-8f6c-94e8b7c6f2c2 10040 127.0.0.1 10041 
+Jun 11 19:43:04.160 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWAC2 0 0 udp-423351f5-b852-4b81-8f6c-94e8b7c6f2c2 
+Jun 11 19:43:04.160 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 19:43:04.969 HYPERVISOR: exec_cmd: nio create_udp udp-19a01e51-81f4-4ac8-a97c-b28bca900cb1 10056 127.0.0.1 10057 
+Jun 11 19:43:04.970 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWAC2 0 1 udp-19a01e51-81f4-4ac8-a97c-b28bca900cb1 
+Jun 11 19:43:04.970 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 19:43:05.068 HYPERVISOR: exec_cmd: nio create_udp udp-d8c490f6-87a1-4e3f-a42f-db2b399210b1 10062 127.0.0.1 10063 
+Jun 11 19:43:05.069 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWAC2 1 0 udp-d8c490f6-87a1-4e3f-a42f-db2b399210b1 
+Jun 11 19:43:05.070 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 19:43:10.349 HYPERVISOR: exec_cmd: nio create_udp udp-48a5c1dd-c8c7-42db-ba18-6b3791aa214f 10146 127.0.0.1 10147 
+Jun 11 19:43:10.350 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWAC2 1 1 udp-48a5c1dd-c8c7-42db-ba18-6b3791aa214f 
+Jun 11 19:43:10.350 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 19:43:11.116 HYPERVISOR: exec_cmd: nio create_udp udp-6c949866-5646-430d-b9d6-9a4794b1b650 10168 127.0.0.1 10169 
+Jun 11 19:43:11.117 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWAC2 1 2 udp-6c949866-5646-430d-b9d6-9a4794b1b650 
+Jun 11 19:43:11.117 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 19:43:11.345 HYPERVISOR: exec_cmd: nio create_udp udp-c5d09e87-2af2-4d09-99ff-aec584bfddea 10180 127.0.0.1 10181 
+Jun 11 19:43:11.347 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWAC2 1 3 udp-c5d09e87-2af2-4d09-99ff-aec584bfddea 
+Jun 11 19:43:11.347 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 19:43:11.564 HYPERVISOR: exec_cmd: nio create_udp udp-b4468f05-73e8-43bd-941f-c2b918cac19d 10192 127.0.0.1 10193 
+Jun 11 19:43:11.566 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWAC2 1 4 udp-b4468f05-73e8-43bd-941f-c2b918cac19d 
+Jun 11 19:43:11.566 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 19:48:59.362 HYPERVISOR: exec_cmd: vm set_ghost_status SWAC2 2 
+Jun 11 19:48:59.362 HYPERVISOR: exec_cmd: vm set_ghost_file SWAC2 /home/samuel/Universidade/ArProject/ar/Projeto/Fase2/Projeto/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 11 19:48:59.363 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 19:48:59.365 HYPERVISOR: exec_cmd: vm set_config SWAC2 configs/i9_startup-config.cfg 
+Jun 11 19:48:59.367 HYPERVISOR: exec_cmd: vm start SWAC2 
+Jun 11 20:54:44.674 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 20:54:44.674 HYPERVISOR: exec_cmd: vm stop SWAC2 
+Jun 11 20:54:44.866 VM: VM SWAC2 shutdown.
+Jun 11 20:54:44.866 HYPERVISOR: exec_cmd: vm extract_config SWAC2 
+Jun 11 20:54:50.879 HYPERVISOR: exec_cmd: vm set_ghost_status SWAC2 2 
+Jun 11 20:54:50.882 HYPERVISOR: exec_cmd: vm set_ghost_file SWAC2 /home/samuel/Universidade/ArProject/ar/Projeto/Fase2/Projeto/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 11 20:54:50.887 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 20:54:50.889 HYPERVISOR: exec_cmd: vm set_config SWAC2 configs/i9_startup-config.cfg 
+Jun 11 20:54:50.892 HYPERVISOR: exec_cmd: vm start SWAC2 
+Jun 11 21:20:56.743 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 21:20:56.743 HYPERVISOR: exec_cmd: vm slot_disable_nio SWAC2 0 0 
+Jun 11 21:20:56.755 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SWAC2 0 0 
+Jun 11 21:20:56.757 HYPERVISOR: exec_cmd: nio delete udp-423351f5-b852-4b81-8f6c-94e8b7c6f2c2 
+Jun 11 21:21:46.322 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 21:21:46.323 HYPERVISOR: exec_cmd: vm slot_disable_nio SWAC2 1 0 
+Jun 11 21:21:46.335 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SWAC2 1 0 
+Jun 11 21:21:46.336 HYPERVISOR: exec_cmd: nio delete udp-d8c490f6-87a1-4e3f-a42f-db2b399210b1 
+Jun 11 21:21:55.632 HYPERVISOR: exec_cmd: nio create_udp udp-ebfbefa6-2645-402c-8ed1-c2bed9786b59 10050 127.0.0.1 10051 
+Jun 11 21:21:55.634 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWAC2 0 0 udp-ebfbefa6-2645-402c-8ed1-c2bed9786b59 
+Jun 11 21:21:55.634 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 21:21:55.634 HYPERVISOR: exec_cmd: vm slot_enable_nio SWAC2 0 0 
+Jun 11 21:22:04.286 HYPERVISOR: exec_cmd: nio create_udp udp-a4c6f3d6-6ce9-4304-a65f-772582019a42 10064 127.0.0.1 10065 
+Jun 11 21:22:04.288 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWAC2 1 0 udp-a4c6f3d6-6ce9-4304-a65f-772582019a42 
+Jun 11 21:22:04.289 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 21:22:04.289 HYPERVISOR: exec_cmd: vm slot_enable_nio SWAC2 1 0 
+Jun 11 21:40:51.449 HYPERVISOR: exec_cmd: vm extract_config SWAC2 
+Jun 11 21:40:51.820 HYPERVISOR: exec_cmd: vm extract_config SWAC2 
+Jun 11 21:44:21.480 HYPERVISOR: exec_cmd: vm extract_config SWAC2 
+Jun 11 21:44:21.689 HYPERVISOR: exec_cmd: vm extract_config SWAC2 
+Jun 11 21:46:21.493 HYPERVISOR: exec_cmd: vm extract_config SWAC2 
+Jun 11 21:46:21.601 HYPERVISOR: exec_cmd: vm extract_config SWAC2 
+Jun 11 21:50:11.700 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 21:50:11.700 HYPERVISOR: exec_cmd: vm stop SWAC2 
+Jun 11 21:50:11.908 VM: VM SWAC2 shutdown.
+Jun 11 21:50:11.908 HYPERVISOR: exec_cmd: vm extract_config SWAC2 
+Jun 11 21:50:13.521 HYPERVISOR: exec_cmd: vm get_status SWAC2 
+Jun 11 21:50:13.521 HYPERVISOR: exec_cmd: vm extract_config SWAC2 
+Jun 11 21:50:13.523 HYPERVISOR: exec_cmd: vm delete SWAC2 
+Jun 11 21:50:13.523 VM: VM SWAC2 destroyed.
+Jun 11 21:50:13.523 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 11 21:50:13.923 HYPERVISOR: Stopped.
+Jun 11 21:50:13.923 GENERAL: reset done.

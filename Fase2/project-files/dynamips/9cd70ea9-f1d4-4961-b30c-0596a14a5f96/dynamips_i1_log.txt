@@ -1,0 +1,47 @@
+Jun 14 13:36:29.725 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jun 14 13:36:29.725 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46045.
+Jun 14 13:36:29.732 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 14 13:36:29.732 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ArProject/ar/Projeto/Fase2/Projeto/project-files/dynamips 
+Jun 14 13:36:29.732 GENERAL: working_dir=/home/samuel/Universidade/ArProject/ar/Projeto/Fase2/Projeto/project-files/dynamips
+Jun 14 13:36:29.732 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ArProject/ar/Projeto/Fase2/Projeto/project-files/dynamips/9cd70ea9-f1d4-4961-b30c-0596a14a5f96 
+Jun 14 13:36:29.732 GENERAL: working_dir=/home/samuel/Universidade/ArProject/ar/Projeto/Fase2/Projeto/project-files/dynamips/9cd70ea9-f1d4-4961-b30c-0596a14a5f96
+Jun 14 13:36:29.732 HYPERVISOR: exec_cmd: vm create Lis_ISP_PT1 1 c7200 
+Jun 14 13:36:29.732 VM: VM Lis_ISP_PT1 created.
+Jun 14 13:36:29.733 HYPERVISOR: exec_cmd: vm set_con_tcp_port Lis_ISP_PT1 5000 
+Jun 14 13:36:29.733 HYPERVISOR: exec_cmd: c7200 get_mac_addr Lis_ISP_PT1 
+Jun 14 13:36:29.733 HYPERVISOR: exec_cmd: vm get_status Lis_ISP_PT1 
+Jun 14 13:36:29.733 HYPERVISOR: exec_cmd: vm slot_add_binding Lis_ISP_PT1 0 0 C7200-IO-FE 
+Jun 14 13:36:29.734 HYPERVISOR: exec_cmd: vm set_disk0 Lis_ISP_PT1 0 
+Jun 14 13:36:29.734 HYPERVISOR: exec_cmd: vm get_status Lis_ISP_PT1 
+Jun 14 13:36:29.734 HYPERVISOR: exec_cmd: vm set_idle_pc Lis_ISP_PT1 0x60608040 
+Jun 14 13:36:29.761 HYPERVISOR: exec_cmd: vm set_ios Lis_ISP_PT1 /home/samuel/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 14 13:36:29.761 HYPERVISOR: exec_cmd: c7200 set_mac_addr Lis_ISP_PT1 ca01.1584.0000 
+Jun 14 13:36:29.762 HYPERVISOR: exec_cmd: vm set_nvram Lis_ISP_PT1 512 
+Jun 14 13:36:29.762 HYPERVISOR: exec_cmd: vm set_ram Lis_ISP_PT1 512 
+Jun 14 13:36:29.762 HYPERVISOR: exec_cmd: vm get_status Lis_ISP_PT1 
+Jun 14 13:36:29.762 HYPERVISOR: exec_cmd: vm slot_remove_binding Lis_ISP_PT1 0 0 
+Jun 14 13:36:29.763 HYPERVISOR: exec_cmd: vm get_status Lis_ISP_PT1 
+Jun 14 13:36:29.763 HYPERVISOR: exec_cmd: vm slot_add_binding Lis_ISP_PT1 0 0 C7200-IO-2FE 
+Jun 14 13:36:29.763 HYPERVISOR: exec_cmd: vm get_status Lis_ISP_PT1 
+Jun 14 13:36:29.763 HYPERVISOR: exec_cmd: vm slot_add_binding Lis_ISP_PT1 1 0 PA-2FE-TX 
+Jun 14 13:36:30.486 HYPERVISOR: exec_cmd: nio create_udp udp-b7e84781-5304-419f-ba22-b8cbe7d2a76e 10004 127.0.0.1 10005 
+Jun 14 13:36:30.728 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Lis_ISP_PT1 0 0 udp-b7e84781-5304-419f-ba22-b8cbe7d2a76e 
+Jun 14 13:36:30.729 HYPERVISOR: exec_cmd: vm get_status Lis_ISP_PT1 
+Jun 14 13:36:31.434 HYPERVISOR: exec_cmd: nio create_udp udp-cb38d095-548a-412a-9dbb-b51c8d732a5a 10016 127.0.0.1 10017 
+Jun 14 13:36:31.435 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Lis_ISP_PT1 0 1 udp-cb38d095-548a-412a-9dbb-b51c8d732a5a 
+Jun 14 13:36:31.435 HYPERVISOR: exec_cmd: vm get_status Lis_ISP_PT1 
+Jun 14 13:36:34.966 HYPERVISOR: exec_cmd: nio create_udp udp-c85470ce-748c-4172-9ca4-9f668f7f054d 10088 127.0.0.1 10089 
+Jun 14 13:36:34.967 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Lis_ISP_PT1 1 0 udp-c85470ce-748c-4172-9ca4-9f668f7f054d 
+Jun 14 13:36:34.967 HYPERVISOR: exec_cmd: vm get_status Lis_ISP_PT1 
+Jun 14 13:39:41.877 HYPERVISOR: exec_cmd: vm set_ghost_status Lis_ISP_PT1 2 
+Jun 14 13:39:41.878 HYPERVISOR: exec_cmd: vm set_ghost_file Lis_ISP_PT1 /home/samuel/Universidade/ArProject/ar/Projeto/Fase2/Projeto/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 14 13:39:41.879 HYPERVISOR: exec_cmd: vm get_status Lis_ISP_PT1 
+Jun 14 13:39:41.880 HYPERVISOR: exec_cmd: vm set_config Lis_ISP_PT1 configs/i1_startup-config.cfg configs/i1_private-config.cfg 
+Jun 14 13:39:41.881 HYPERVISOR: exec_cmd: vm start Lis_ISP_PT1 
+Jun 14 13:40:12.110 HYPERVISOR: exec_cmd: vm extract_config Lis_ISP_PT1 
+Jun 14 13:40:42.111 HYPERVISOR: exec_cmd: vm extract_config Lis_ISP_PT1 
+Jun 14 13:41:12.113 HYPERVISOR: exec_cmd: vm extract_config Lis_ISP_PT1 
+Jun 14 13:47:46.406 HYPERVISOR: exec_cmd: vm get_status Lis_ISP_PT1 
+Jun 14 13:47:46.407 HYPERVISOR: exec_cmd: vm stop Lis_ISP_PT1 
+Jun 14 13:47:46.534 VM: VM Lis_ISP_PT1 shutdown.
+Jun 14 13:47:46.536 HYPERVISOR: exec_cmd: vm extract_config Lis_ISP_PT1 

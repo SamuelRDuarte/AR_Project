@@ -1,0 +1,44 @@
+Jun 10 18:50:00.934 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jun 10 18:50:00.934 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51783.
+Jun 10 18:50:00.946 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 10 18:50:00.946 HYPERVISOR: exec_cmd: hypervisor working_dir /home/dariod9/Desktop/Projeto/project-files/dynamips 
+Jun 10 18:50:00.946 GENERAL: working_dir=/home/dariod9/Desktop/Projeto/project-files/dynamips
+Jun 10 18:50:00.946 HYPERVISOR: exec_cmd: hypervisor working_dir /home/dariod9/Desktop/Projeto/project-files/dynamips/7e438ff7-9a7b-4bb7-884c-2e6ce1a35f05 
+Jun 10 18:50:00.946 GENERAL: working_dir=/home/dariod9/Desktop/Projeto/project-files/dynamips/7e438ff7-9a7b-4bb7-884c-2e6ce1a35f05
+Jun 10 18:50:00.947 HYPERVISOR: exec_cmd: vm create RB1 4 c7200 
+Jun 10 18:50:00.947 VM: VM RB1 created.
+Jun 10 18:50:00.947 HYPERVISOR: exec_cmd: vm set_con_tcp_port RB1 5006 
+Jun 10 18:50:00.947 HYPERVISOR: exec_cmd: c7200 get_mac_addr RB1 
+Jun 10 18:50:00.948 HYPERVISOR: exec_cmd: vm get_status RB1 
+Jun 10 18:50:00.948 HYPERVISOR: exec_cmd: vm slot_add_binding RB1 0 0 C7200-IO-FE 
+Jun 10 18:50:00.949 HYPERVISOR: exec_cmd: vm set_disk0 RB1 0 
+Jun 10 18:50:00.949 HYPERVISOR: exec_cmd: vm get_status RB1 
+Jun 10 18:50:00.949 HYPERVISOR: exec_cmd: vm set_idle_pc RB1 0x60608040 
+Jun 10 18:50:00.950 HYPERVISOR: exec_cmd: vm set_ios RB1 /home/dariod9/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 10 18:50:00.950 HYPERVISOR: exec_cmd: c7200 set_mac_addr RB1 ca04.17a3.0000 
+Jun 10 18:50:00.950 HYPERVISOR: exec_cmd: vm set_nvram RB1 512 
+Jun 10 18:50:00.950 HYPERVISOR: exec_cmd: vm set_ram RB1 512 
+Jun 10 18:50:00.951 HYPERVISOR: exec_cmd: vm get_status RB1 
+Jun 10 18:50:00.951 HYPERVISOR: exec_cmd: vm slot_remove_binding RB1 0 0 
+Jun 10 18:50:00.951 HYPERVISOR: exec_cmd: vm get_status RB1 
+Jun 10 18:50:00.951 HYPERVISOR: exec_cmd: vm slot_add_binding RB1 0 0 C7200-IO-2FE 
+Jun 10 18:50:00.951 HYPERVISOR: exec_cmd: vm get_status RB1 
+Jun 10 18:50:00.951 HYPERVISOR: exec_cmd: vm slot_add_binding RB1 1 0 PA-2FE-TX 
+Jun 10 18:50:02.822 HYPERVISOR: exec_cmd: nio create_udp udp-dd80ce70-98bb-461a-a611-171e6df64a08 10024 127.0.0.1 10025 
+Jun 10 18:50:03.039 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RB1 0 0 udp-dd80ce70-98bb-461a-a611-171e6df64a08 
+Jun 10 18:50:03.039 HYPERVISOR: exec_cmd: vm get_status RB1 
+Jun 10 18:50:03.442 HYPERVISOR: exec_cmd: nio create_udp udp-a50c9205-4847-468e-97ca-cbf39dcc72e1 10032 127.0.0.1 10033 
+Jun 10 18:50:03.443 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RB1 0 1 udp-a50c9205-4847-468e-97ca-cbf39dcc72e1 
+Jun 10 18:50:03.443 HYPERVISOR: exec_cmd: vm get_status RB1 
+Jun 10 18:50:08.157 HYPERVISOR: exec_cmd: nio create_udp udp-bdcdd97e-debb-44a4-bb93-5b763185f401 10184 127.0.0.1 10185 
+Jun 10 18:50:08.158 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RB1 1 0 udp-bdcdd97e-debb-44a4-bb93-5b763185f401 
+Jun 10 18:50:08.158 HYPERVISOR: exec_cmd: vm get_status RB1 
+Jun 10 18:50:13.433 HYPERVISOR: exec_cmd: vm get_status RB1 
+Jun 10 18:50:13.435 HYPERVISOR: exec_cmd: vm extract_config RB1 
+Jun 10 18:50:13.949 HYPERVISOR: exec_cmd: vm get_status RB1 
+Jun 10 18:50:13.949 HYPERVISOR: exec_cmd: vm extract_config RB1 
+Jun 10 18:50:13.950 HYPERVISOR: exec_cmd: vm delete RB1 
+Jun 10 18:50:13.950 VM: VM RB1 destroyed.
+Jun 10 18:50:13.951 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 10 18:50:13.957 HYPERVISOR: Stopped.
+Jun 10 18:50:13.957 GENERAL: reset done.

@@ -1,0 +1,40 @@
+Jun 10 18:50:01.259 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jun 10 18:50:01.259 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38573.
+Jun 10 18:50:01.269 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 10 18:50:01.269 HYPERVISOR: exec_cmd: hypervisor working_dir /home/dariod9/Desktop/Projeto/project-files/dynamips 
+Jun 10 18:50:01.269 GENERAL: working_dir=/home/dariod9/Desktop/Projeto/project-files/dynamips
+Jun 10 18:50:01.270 HYPERVISOR: exec_cmd: hypervisor working_dir /home/dariod9/Desktop/Projeto/project-files/dynamips/4853dbf1-3c21-4818-9b78-60b3ecef52fd 
+Jun 10 18:50:01.270 GENERAL: working_dir=/home/dariod9/Desktop/Projeto/project-files/dynamips/4853dbf1-3c21-4818-9b78-60b3ecef52fd
+Jun 10 18:50:01.270 HYPERVISOR: exec_cmd: vm create SWAD1_2 11 c3725 
+Jun 10 18:50:01.270 VM: VM SWAD1_2 created.
+Jun 10 18:50:01.270 HYPERVISOR: exec_cmd: vm set_con_tcp_port SWAD1_2 5016 
+Jun 10 18:50:01.271 HYPERVISOR: exec_cmd: c3725 get_mac_addr SWAD1_2 
+Jun 10 18:50:01.271 HYPERVISOR: exec_cmd: vm set_disk0 SWAD1_2 1 
+Jun 10 18:50:01.271 HYPERVISOR: exec_cmd: vm get_status SWAD1_2 
+Jun 10 18:50:01.271 HYPERVISOR: exec_cmd: vm set_idle_pc SWAD1_2 0x60a68e70 
+Jun 10 18:50:01.272 HYPERVISOR: exec_cmd: vm set_ios SWAD1_2 /home/dariod9/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 10 18:50:01.273 HYPERVISOR: exec_cmd: c3725 set_mac_addr SWAD1_2 c20b.1a58.0000 
+Jun 10 18:50:01.273 HYPERVISOR: exec_cmd: vm set_nvram SWAD1_2 256 
+Jun 10 18:50:01.273 HYPERVISOR: exec_cmd: vm get_status SWAD1_2 
+Jun 10 18:50:01.273 HYPERVISOR: exec_cmd: vm slot_add_binding SWAD1_2 1 0 NM-16ESW 
+Jun 10 18:50:05.195 HYPERVISOR: exec_cmd: nio create_udp udp-571ba797-e461-439a-943f-6ab3f433ddfe 10082 127.0.0.1 10083 
+Jun 10 18:50:05.411 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWAD1_2 0 0 udp-571ba797-e461-439a-943f-6ab3f433ddfe 
+Jun 10 18:50:05.411 HYPERVISOR: exec_cmd: vm get_status SWAD1_2 
+Jun 10 18:50:06.166 HYPERVISOR: exec_cmd: nio create_udp udp-a3f90b01-a923-4dbd-8b32-eaa2e1fbbc08 10106 127.0.0.1 10107 
+Jun 10 18:50:06.167 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWAD1_2 0 1 udp-a3f90b01-a923-4dbd-8b32-eaa2e1fbbc08 
+Jun 10 18:50:06.167 HYPERVISOR: exec_cmd: vm get_status SWAD1_2 
+Jun 10 18:50:06.420 HYPERVISOR: exec_cmd: nio create_udp udp-a67ea7a7-2cb6-4781-b999-59d70ed8164b 10124 127.0.0.1 10125 
+Jun 10 18:50:06.421 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWAD1_2 1 0 udp-a67ea7a7-2cb6-4781-b999-59d70ed8164b 
+Jun 10 18:50:06.421 HYPERVISOR: exec_cmd: vm get_status SWAD1_2 
+Jun 10 18:50:06.704 HYPERVISOR: exec_cmd: nio create_udp udp-910c10e7-87d9-43c1-b6fa-a4370e2e90a9 10138 127.0.0.1 10139 
+Jun 10 18:50:06.706 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWAD1_2 1 1 udp-910c10e7-87d9-43c1-b6fa-a4370e2e90a9 
+Jun 10 18:50:06.706 HYPERVISOR: exec_cmd: vm get_status SWAD1_2 
+Jun 10 18:50:13.514 HYPERVISOR: exec_cmd: vm get_status SWAD1_2 
+Jun 10 18:50:13.514 HYPERVISOR: exec_cmd: vm extract_config SWAD1_2 
+Jun 10 18:50:13.817 HYPERVISOR: exec_cmd: vm get_status SWAD1_2 
+Jun 10 18:50:13.817 HYPERVISOR: exec_cmd: vm extract_config SWAD1_2 
+Jun 10 18:50:13.862 HYPERVISOR: exec_cmd: vm delete SWAD1_2 
+Jun 10 18:50:13.862 VM: VM SWAD1_2 destroyed.
+Jun 10 18:50:13.864 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 10 18:50:14.280 HYPERVISOR: Stopped.
+Jun 10 18:50:14.280 GENERAL: reset done.
