@@ -1,0 +1,16 @@
+SWAD1_1 - Antena -> Tunnel10(gre ip)
+SWAD2_2 - Antena -> Tunnel1(gre ip)
+SWAD1_1 - DMZ_SW1 -> Tunnel11 (ipsec)
+SWAD1_1 - DMZ_SW2 -> Tunnel12 (ipsec)
+SWAD1_2 - DMZ_SW1 -> Tunnel21 (ipsec)
+SWAD1_2 - DMZ_SW2 -> Tunnel22 (ipsec)
+SWAD2_1 - DMZ_SW1 -> Tunnel31 (ipsec)
+SWAD2_1 - DMZ_SW2 -> Tunnel32 (ipsec)
+SWAD2_2 - DMZ_SW1 -> Tunnel41 (ipsec)
+SWAD2_2 - DMZ_SW2 -> Tunnel42 (ipsec)
+Av_ISP_PT2 - Lis_ISP_PT2 -> Tunnel60 (gre ip){ipv6ip}
+Av_ISP_PT2 - Bos_ISP_US1 -> Tunnel61 (gre ip){ipv6ip}
+Av_ISP_PT2 - Bos_ISP_US2 -> Tunnel62 (gre ip){ipv6ip}
+Av_ISP_PT2 - Lis_ISP_PT1 -> Tunnel63 (gre ip){ipv6ip}
+
+
